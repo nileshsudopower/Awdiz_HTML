@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Day 5</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid blue;
+            border-collapse: collapse;
+            color: rgb(8, 218, 218);
+        }
+
+        th {
+            color: rgb(7, 131, 168);
+            background-color: black;
+            font-size: 26px;
+        }
+
+        .myclass {
+            color: blueviolet;
+            border: 1px solid black;
+        }
+
+        #myId {
+            color: magenta;
+        }
+    </style>
+
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Sr.No</th>
+                <th>Name</th>
+                <th>Company Name</th>
+                <th>Salary</th>
+                <th>Expected Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Sandesh</td>
+                <td>Google</td>
+                <td>12LPA</td>
+                <td>18LPA</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Shubham</td>
+                <td>TCS</td>
+                <td>4LPA</td>
+                <td>6.5LPA</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Kajal</td>
+                <td rowspan="2">Wipro</td>
+                <td colspan="2">6LPA</td>
+
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Nilesh</td>
+                <td colspan="2">7LPA</td>
+            </tr>
+        </tbody>
+
+    </table>
+    <h2 style="border: 2px solid rgb(8, 221, 54);">Testing solid border</h2>
+    <h2 style="border: 2px dotted greenyellow;">Testing dotted border</h2>
+    <h2 style="border: 2px dotted goldenrod;">Testing dotted border</h2>
+    <h2 style="border: 2px double blueviolet;">Testing double border</h2>
+    <h2 style="border: 2px groove palegreen;">Testing groove border</h2>
+    <h2 style="border: 2px ridge green;">Testing ridge border</h2>
+    <h2 style="border: 2px inset red;">Testing inset border</h2>
+    <h2 style="border: 2px outset blue;">Testing outsetborder</h2>
+
+    <input placeholder="Search.." style="border: hidden; outline: none;" />
+    <button style="border: none;">Click me!</button>
+     <!-- Unorderlist  -->
+     <ul>
+        <li>List1</li>
+        <li>List2</li>
+        <li>List3</li>
+        <li>List4</li>
+       
+    </ul>
+    <!-- Orderlist  -->
+    <ol>
+        <li>List1</li>
+        <li>List2</li>
+        <li>List3</li>
+        <li>List4</li>
+        
+    </ol>
+    
+    <dl>
+        <dt>First term</dt>
+        <dd>Day1 of html updated</dd>
+        <dt>First second</dt>
+        <dd>Day2 of html updated</dd>
+        <dt>First Third</dt>
+        <dd>Day3 of html updated</dd>
+    </dl>
+
+    <h2 class="myclass">Testing myclass</h2>
+    <!-- 1 Class can be reused again and again -->
+    <p class="myclass">Testing myclass again</p>
+
+    <p id="myId">Testing myid </p>
+
+    <p><span style="border: 1px solid black;"> border</span> </p>
+    <label style="border: 1px solid black;">Testing inline border</label>
+
+</body>
+
+</html>
