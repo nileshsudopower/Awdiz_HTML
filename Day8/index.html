@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        #hover {
+        border: 1px solid black;
+        height: 50px;
+        width: 200px;
+      }
+
+      #hover:hover {
+        border: 1px darkblue;
+        color: red;
+      }
+      /* when using pattern */
+      #text:valid {
+        background-color: green;
+      }
+
+      #text:invalid {
+        background-color: red;
+      }
+
+    </style>
+
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Sign Up</legend>
+            <label>Name</label><br />
+            <input type="text" placeholder="First Name" autofocus/><br />
+            <label>Last Name</label><br />
+            <input type="text" placeholder="Last Name" /><br />
+            <label>Email</label><br />
+            <input type="email" /><br />
+            <label>Username</label><br />
+            <input type="text" value="Sudopower" readonly /><br />
+            <!-- If you signin -> name -> disable
+                 not signined -> readonlyd -->
+            <label>Contact Info</label><br />
+            <input type="tel" /><br />
+            <label>Gender</label><br />
+            <input type="radio" id="Male" value="Male" /><label for="Male">Male</label><br />
+            <input type="radio" id="Female" value="Female"  /><label for="Female">Male</label><br />
+            <label>Age</label><br />
+            <input type="number" min="0" max="100" /><br />
+            <input type="checkbox" id="Terms and condition" value="accept condition" /><label for="Terms and condition">Terms and condition</label><br />
+            <input type="submit" value="Sign up" />
+
+        </fieldset>
+    </form>
+    <h3>Input Maxlength</h3>
+    <input maxlength="50" placeholder="max 10 letters"/>
+    <h3>Hover</h3>
+    <div id="hover">testing hover</div>
+    <h3>Onsubmit,Required,pattern and disabled </h3>
+    <form onsubmit="">
+      <input id="text" type="text" pattern="\w{1,20}" required />
+      <input id="text" type="password" pattern="\w{1,10}" required />
+      <input disabled type="submit" />
+    </form>
+    <h3>ToolTip</h3>
+    <span title="I can see you, tooltip">point arrow to me</span>
+    <h3>Novalidate</h3>
+    <form novalidate>
+      <label>Email</label><br />
+      <input required /><br />
+      <label>Password</label><br />
+      <input /><br />
+      <input type="submit" /><br />
+    </form>
+    <h3>Canvas requires JS</h3>
+    <canvas
+      id="myCanvas"
+      width="200"
+      height="100"
+      style="border: 1px solid #000000"
+    >
+    </canvas><br />
+
+    <svg width="100" height="100">
+      <circle
+        cx="50"
+        cy="50"
+        r="40"
+        stroke="green"
+        strokewidth="4"
+        fill="yellow"
+      />
+    </svg>
+        
+
+</body>
+
+</html>
