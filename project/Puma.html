@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Puma</title>
+    <script src="https://kit.fontawesome.com/14d09615e5.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        #fullpage {
+        margin: auto;
+        width: 100%;
+        border: 2px solid black;
+        }
+        #toppage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #8a7350;
+            height: 45px;
+            color: white;
+            font-size: small;
+            font-weight: bolder;
+        }
+        span::after {
+            content: "FREE DELEVERY.FREE RETURNS.";
+            animation: animate infinite 10s;
+        }
+        @keyframes animate { 
+  
+            0% { content: "FREE DELEVERY.FREE RETURNS."; } 
+            50% { content: "EXTRA 5% DISCOUNT FOR ALL ONLINE PAYMENTS"; } 
+            75% { content: "FREE DELEVERY.FREE RETURNS."; } 
+            100%{ content: "EXTRA 5% DISCOUNT FOR ALL ONLINE PAYMENTS";} 
+        }
+        #navbar {
+            background-color: #181818;
+            display: flex;
+        }
+        #left {
+            display: flex;
+        }
+        .leftnav {
+            color: white;
+            font-weight: bolder;
+            font-size: medium;
+            padding-left: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #leftnavmen {
+            color: white;
+            font-weight: bolder;
+            font-size: medium;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        #rightNav {
+        width: 40%;
+        /* border: 2px solid blue; */
+        padding-left: 130px;
+        color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        }
+        #search {
+            background-color: #181818;
+            border: 1px solid white; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height:40px;
+            font-size:16pt;
+        }
+        #newsearch {
+            border: none;
+            background-color: #181818;
+            color: white;
+            display: flex;
+            align-items: last baseline;
+            height:26px;
+            font-size:14pt;
+        }
+        .icons {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-right: 50px;
+        }
+        .icons1 {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding-right: 8px;
+        }
+
+
+    </style>
+</head>
+<body>  
+    <div id="fullpage">
+        <div id="toppage"><span></span></div>
+        <div id="navbar">
+            <div id="left">
+            <div><img src="../image/puma.PNG" alt="Puma logo"></div>
+            <div id="leftnavmen">New</div>
+            <div class="leftnav">Women</div>
+            <div class="leftnav">Men</div>
+            <div class="leftnav">Kids</div>
+            <div class="leftnav">FENYxPUMA</div>
+            <div class="leftnav">Motorsports</div>
+            <div class="leftnav">Collaboration</div>
+            <div class="leftnav">Sports</div>
+            <div class="leftnav">Outlet</div>
+            </div>
+            <div id="rightNav">
+                <div id="search"><i  class="fa-solid fa-magnifying-glass"></i><input id="newsearch" size="8" placeholder="Search"/></div>
+                <div class="icons1"><i class="fa-regular fa-heart"></i></div>
+                <div class="icons1"><i class="fa-solid fa-cart-shopping"></i></div>
+                <div class="icons"><i class="fa-regular fa-user"></i></div>
+                
+            </div>
+        </div>
+        <div><img src="../image/puma1.PNG" alt="Puma Offers"/></div>
+    </div>
+    
+</body>
+</html>
