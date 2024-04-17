@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb</title>
+    <script src="https://kit.fontawesome.com/14d09615e5.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto,
+                Helvetica Neue, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .d-none {
+        display: none;
+      }
+
+        #parentDiv {
+            width: 95%;
+            margin: auto;
+            height: auto;
+            /* border: 2px solid black; */
+        }
+        #navbar {
+            width: 100%;
+            /* border: 2px solid red; */
+            height: 180px;
+            position: sticky;
+            top: 0;
+            left: 0;
+            background-color: white;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        #logo {
+        width: 15%;
+        /* border: 2px solid black; */
+        display: flex;
+        align-items: center;
+      }
+
+        #FirstNav {
+            width: 100%;
+            /* border: 2px solid red; */
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #SecondNav {
+            width: 100%;
+            /* border: 2px solid red; */
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #SecondNavdiv {
+            width: 65%;
+            border: 1px solid rgba(141, 135, 135, 0.445);
+            height: 65px;
+            margin-bottom: 50px;
+            border-radius: 35px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+        #internav1 {
+            width: 35%;
+            /* border: 1px solid red; */
+            height: 60px;
+            padding-left: 25px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+
+        #internav2 {
+            width: 15%;
+            /* border: 1px solid red; */
+            height: 60px;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+
+        #internav3 {
+            width: 15%;
+            /* border: 1px solid red; */
+            height: 60px;
+            padding-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+
+        #internav4 {
+            width: 35%;
+            padding-left: 0%;
+            margin-left: 0%;
+            /* border: 1px solid red; */
+            height: 60px;
+            padding-left: 15px;
+            display: flex;
+            /* flex-direction: column; */
+            justify-content: left;
+            align-items: center;
+
+        }
+
+        #search {
+            margin-left: 0%;
+            padding: left 1px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: left;
+        }
+
+        #search1 {
+            margin-left: 143px;
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            background-color: #ff385c;
+            color: #fff8f9;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+        }
+
+        #bottomNav {
+            width: 100%;
+            height: 80px;
+            border-top: 2px solid #dddddd;
+            display: flex;
+            justify-content: left;
+            align-items: center;
+        }
+
+        #leftbottomnav {
+            width: 65%;
+            display: flex;
+            /* border: 2px solid black; */
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        #airbnblogo {
+            text-align: center;
+            color: #8d8787;
+
+        }
+        #rightbottomNav { 
+            width: 35%;
+            margin-left: 20px;
+            height: 50px;
+            padding-left: 40px;
+            /* border: 1px solid rebeccapurple; */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+        #filter1 { 
+            width: 8%;
+            height: 28px;
+            border: 1px solid #dddddd;
+            border-radius: 50%;
+            font-size: 14px;
+            font-weight: bolder;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+        #filter2 { 
+            width: 25%;
+            height: 50px;
+            border: 1px solid #dddddd;
+            border-radius: 12px;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #filter3 { 
+            width: 60%;
+            height: 50px;
+            border: 1px solid #dddddd;
+            border-radius: 12px;
+            font-size: 14px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #body {
+        width: 100%;
+        /* border: 2px solid red; */
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+      .productCard {
+        /* border: 2px solid blue; */
+        height: 400px;
+        width: 23%;
+        margin-bottom: 25px;
+      }
+      .cardBackGroundImg {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav2.jpeg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg1 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav1.jpg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg2 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav7.jpg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg3 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav3.jpeg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg4 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav4.jpeg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg5 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav5.jpg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg6 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav6.jpeg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg7 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav8.jpg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg8 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav9.jpg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg9 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav10.jpeg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg10 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav11.jpeg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg11 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav12.jpeg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg12 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav13.jpeg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg13 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav14.jpeg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg14 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav15.jpg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg15 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav16.jpeg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg16 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav17.jpeg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg17 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav18.jpeg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg18 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav19.jpeg");
+        margin-bottom: 12px;
+      }
+      .cardBackGroundImg19 {
+        width: 100%;
+        height: 300px;
+        border-radius: 20px;
+        background-size: cover;
+        background-image: url("../image/airbnb/fav20.jpeg");
+        margin-bottom: 12px;
+      }
+      .imgOver {
+        padding-top: 10px;
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      .imgOver > p:nth-child(1) {
+        text-align: center;
+        background-color: white;
+        padding: 5px;
+        width: 46%;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 500;
+      }
+      .imgOver > i {
+        font-size: 24px;
+        color: white;
+      }
+      .cardText {
+        /* border: 2px solid purple; */
+      }
+      .cardText > p {
+        color: #7b7d81;
+        font-size: 14px;
+        padding: 2px 0px;
+      }
+
+      .cardText > p:nth-child(4) {
+        padding: 6px 0px;
+      }
+      .cardText > p > b {
+        color: black;
+      }
+      .cardTextTitleSection {
+        font-size: 14px;
+        display: flex;
+        font-weight: bold;
+        justify-content: space-between;
+      }
+      .cardTextTitleSection > p:nth-child(2) > i {
+        font-size: 12px;
+      }
+
+      /* 550, 900, 1100 */
+
+      @media screen and (min-width: 900px) and (max-width: 1100px) {
+        .productCard {
+          width: 32%;
+        }
+      }
+      @media screen and (min-width: 550px) and (max-width: 900px) {
+        .productCard {
+          width: 48%;
+        }
+      }
+      @media screen and (max-width: 550px) {
+        .productCard {
+          margin: auto;
+          width: 88%;
+          margin-bottom: 20px;
+        }
+      }
+      #navigations {
+        width: 30%;
+        margin-left: 150px;
+        padding-left: 30px;
+        /* border: 2px solid black; */
+        display: flex;
+        justify-content: center;
+
+      }
+      #firstVavdiv{
+        width: 98%;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      #profile {
+        width: 30%;
+        margin-left: 60px;
+        margin-right: -30px;
+        padding-left: 55px;
+       
+      }
+    </style>
+</head>
+
+<body>
+    <div id="parentDiv">
+    <div id="navbar">
+        <div id="FirstNav">
+            <div id="logo">
+                <img
+                  src="../image/airbnb/new.PNG"
+                  alt="Logo"
+                />
+              </div>
+              <div id="navigations">
+                <div id="firstVavdiv">
+                    <h4>Stays</h4>
+                    <p style="color: #8d8787;">Experiences</p>
+                    <p style="color: #8d8787;">Online Experiences</p>
+                </div>
+              </div>
+              <div id="profile"><img src="../image/airbnb/new1.PNG"/></div>
+        </div>
+        <div id="SecondNav">
+            <div id="SecondNavdiv">
+                <div id="internav1">
+                    <h6 style="color: #454545;">Where</h6>
+                    <p style="font-size: 14px;color: #7c7c7c;">Search Destination</p>
+                </div>
+                <h1 style="font-weight: lighter; color: #dddddd;">|</h1>
+                <div id="internav2">
+                    <h6 style="color: #454545;">Check in</h6>
+                    <p style="font-size: 14px;color: #7c7c7c;">Add Dates</p>
+                </div>
+                <h1 style="font-weight: lighter; color: #dddddd;">|</h1>
+                <div id="internav3">
+                    <h6 style="color: #454545;">Check out</h6>
+                    <p style="font-size: 14px;color: #7c7c7c;">Add Dates</p>
+                </div>
+                <h1 style="font-weight: lighter; color: #dddddd;">|</h1>
+                <div id="internav4">
+                    <div id="search">
+                        <h6 style="color: #454545;">Who</h6>
+                        <p style="font-size: 14px;color: #7c7c7c;">Add Guest</p>
+                    </div>
+                    <div id="search1">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="bottomNav">
+        <div id="leftbottomnav">
+            <div id="airbnblogo">
+                <img src="../image/airbnb/1.jpg" alt="logo1" height="30" />
+                <h6>Caves</h6>
+            </div>
+            <div id="airbnblogo">
+                <img src="../image/airbnb/2.jpg" alt="logo1" height="30" />
+                <h6>Tiny homes</h6>
+            </div>
+            <div id="airbnblogo">
+                <img src="../image/airbnb/3.jpg" alt="logo1" height="30" />
+                <h6>Beachfornt</h6>
+            </div>
+            <div id="airbnblogo">
+                <img src="../image/airbnb/4.jpg" alt="logo1" height="30" />
+                <h6>Bed & Breakfast</h6>
+            </div>
+            <div id="airbnblogo">
+                <img src="../image/airbnb/5.jpg" alt="logo1" height="30" />
+                <h6>Design</h6>
+            </div>
+            <div id="airbnblogo">
+                <img src="../image/airbnb/6.jpg" alt="logo1" height="30" />
+                <h6>Domes</h6>
+            </div>
+            <div id="airbnblogo">
+                <img src="../image/airbnb/7.jpg" alt="logo1" height="30" />
+                <h6>Earth homes</h6>
+            </div>
+            <div id="airbnblogo">
+                <img src="../image/airbnb/8.jpg" alt="logo1" height="30" />
+                <h6>Castles</h6>
+            </div>
+            <div id="airbnblogo">
+                <img src="../image/airbnb/9.jpg" alt="logo1" height="30" />
+                <h6>Lakefront</h6>
+            </div>
+
+        </div>
+        <div id="rightbottomNav">
+            <div id="filter1">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div id="filter2">
+                <i class="fa-solid fa-sliders"></i>
+                <h5>Filter</h5>
+            </div>
+            <div id="filter3">
+                <h5>Display total befor taxes</h5>
+                <i class="fa-solid fa-toggle-on" style="font-size: 26px; color: rgb(179, 176, 176);"></i>
+            </div>
+        </div>
+    </div>
+    <div id="body">
+        <div class="productCard">
+          <div class="cardBackGroundImg">
+            <div class="imgOver">
+              <p>Guest Favourite</p>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="cardText">
+            <div class="cardTextTitleSection">
+              <p>Ortahisar, Turkey</p>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+              </p>
+            </div>
+            <p>4,252 kilometres away</p>
+            <p>14-19 Apr</p>
+            <p><b>₹5,593</b> night</p>
+          </div>
+        </div>
+        <div class="productCard">
+          <div class="cardBackGroundImg1">
+            <div class="imgOver">
+              <p>Guest Favourite</p>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="cardText">
+            <div class="cardTextTitleSection">
+              <p>Wadi Rum Village, Jordan</p>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <span>4.80</span>
+              </p>
+            </div>
+            <p>3,951 kilometres away</p>
+            <p>18-23 Apr</p>
+            <p><b>₹3,559</b> night</p>
+          </div>
+        </div>
+        <div class="productCard">
+          <div class="cardBackGroundImg2">
+            <div class="imgOver">
+              <p>Guest Favourite</p>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="cardText">
+            <div class="cardTextTitleSection">
+              <p>Ortahisar, Turkey</p>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <span>4.60</span>
+              </p>
+            </div>
+            <p>4,252 kilometres awayy</p>
+            <p>14-19 Apr</p>
+            <p><b>₹5,8900</b> night</p>
+          </div>
+        </div>
+        <div class="productCard">
+          <div class="cardBackGroundImg3">
+            <div class="imgOver">
+              <p>Guest Favourite</p>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="cardText">
+            <div class="cardTextTitleSection">
+              <p>Ortahisar Belediyesi, Turkey</p>
+              <p>
+                <i class="fa-solid fa-star"></i>
+                <span>5.0</span>
+              </p>
+            </div>
+            <p>4,252 kilometres away</p>
+            <p>16-24 Apr</p>
+            <p><b>₹9,800</b> night</p>
+          </div>
+        </div>
+        <div class="productCard">
+          <div class="cardBackGroundImg4">
+            <div class="imgOver">
+              <p>Guest Favourite</p>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="cardText">
+            <div class="cardTextTitleSection">
+                <p>Ortahisar Belediyesi, Turkey</p>
+                <p>
+                  <i class="fa-solid fa-star"></i>
+                  <span>5.0</span>
+                </p>
+              </div>
+              <p>4,252 kilometres away</p>
+              <p>16-24 Apr</p>
+            <p><b>₹10,169</b> night</p>
+          </div>
+        </div>
+        <div class="productCard">
+          <div class="cardBackGroundImg5">
+            <div class="imgOver">
+              <p>Guest Favourite</p>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="cardText">
+            <div class="cardTextTitleSection">
+                <p>Ortahisar Belediyesi, Turkey</p>
+                <p>
+                  <i class="fa-solid fa-star"></i>
+                  <span>5.0</span>
+                </p>
+              </div>
+              <p>4,252 kilometres away</p>
+              <p>16-24 Apr</p>
+            <p><b>₹10,169 </b> night</p>
+          </div>
+        </div>
+        <div class="productCard">
+          <div class="cardBackGroundImg6">
+            <div class="imgOver">
+              <p>Guest Favourite</p>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="cardText">
+            <div class="cardTextTitleSection">
+                <p>Ortahisar Belediyesi, Turkey</p>
+                <p>
+                  <i class="fa-solid fa-star"></i>
+                  <span>5.0</span>
+                </p>
+              </div>
+              <p>4,252 kilometres away</p>
+              <p>16-24 Apr</p>
+            <p><b>₹10,169 </b> night</p> 
+          </div>
+        </div>
+        <div class="productCard">
+          <div class="cardBackGroundImg7">
+            <div class="imgOver">
+              <p>Guest Favourite</p>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="cardText">
+            <div class="cardTextTitleSection">
+                <p>Ortahisar Belediyesi, Turkey</p>
+                <p>
+                  <i class="fa-solid fa-star"></i>
+                  <span>5.0</span>
+                </p>
+              </div>
+              <p>4,252 kilometres away</p>
+              <p>16-24 Apr</p>
+              <p><b>₹9,800</b> night</p>
+          </div>
+        </div>
+        <div class="productCard">
+          <div class="cardBackGroundImg8">
+            <div class="imgOver">
+              <p>Guest Favourite</p>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </div>
+          <div class="cardText">
+            <div class="cardTextTitleSection">
+                <p>Ortahisar Belediyesi, Turkey</p>
+                <p>
+                  <i class="fa-solid fa-star"></i>
+                  <span>5.0</span>
+                </p>
+              </div>
+              <p>4,252 kilometres away</p>
+              <p>16-24 Apr</p>
+              <p><b>₹9,800</b> night</p>
+          </div>
+        </div>
+        <div class="productCard">
+            <div class="cardBackGroundImg9">
+              <div class="imgOver">
+                <p>Guest Favourite</p>
+                <i class="fa-regular fa-heart"></i>
+              </div>
+            </div>
+            <div class="cardText">
+              <div class="cardTextTitleSection">
+                <p>Ortahisar Belediyesi, Turkey</p>
+                <p>
+                  <i class="fa-solid fa-star"></i>
+                  <span>5.0</span>
+                </p>
+              </div>
+              <p>4,252 kilometres away</p>
+              <p>16-24 Apr</p>
+              <p><b>₹9,800</b> night</p>
+            </div>
+        </div>
+            <div class="productCard">
+              <div class="cardBackGroundImg10">
+                <div class="imgOver">
+                  <p>Guest Favourite</p>
+                  <i class="fa-regular fa-heart"></i>
+                </div>
+              </div>
+              <div class="cardText">
+                <div class="cardTextTitleSection">
+                    <p>Ortahisar Belediyesi, Turkey</p>
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <span>5.0</span>
+                    </p>
+                  </div>
+                  <p>4,252 kilometres away</p>
+                  <p>16-24 Apr</p>
+                  <p><b>₹9,800</b> night</p>
+              </div>
+            </div>
+              <div class="productCard">
+                <div class="cardBackGroundImg11">
+                  <div class="imgOver">
+                    <p>Guest Favourite</p>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="cardText">
+                  <div class="cardTextTitleSection">
+                    <p>Ortahisar Belediyesi, Turkey</p>
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <span>5.0</span>
+                    </p>
+                  </div>
+                  <p>4,252 kilometres away</p>
+                  <p>16-24 Apr</p>
+                  <p><b>₹9,800</b> night</p>
+                </div>
+            </div>
+                <div class="productCard">
+                  <div class="cardBackGroundImg12">
+                    <div class="imgOver">
+                      <p>Guest Favourite</p>
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <div class="cardText">
+                    <div class="cardTextTitleSection">
+                        <p>Ortahisar Belediyesi, Turkey</p>
+                        <p>
+                          <i class="fa-solid fa-star"></i>
+                          <span>5.0</span>
+                        </p>
+                      </div>
+                      <p>4,252 kilometres away</p>
+                      <p>16-24 Apr</p>
+                      <p><b>₹9,800</b> night</p>
+                  </div>
+                </div>
+                  <div class="productCard">
+                    <div class="cardBackGroundImg13">
+                      <div class="imgOver">
+                        <p>Guest Favourite</p>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="cardText">
+                      <div class="cardTextTitleSection">
+                        <p>Ortahisar Belediyesi, Turkey</p>
+                        <p>
+                          <i class="fa-solid fa-star"></i>
+                          <span>5.0</span>
+                        </p>
+                      </div>
+                      <p>4,252 kilometres away</p>
+                      <p>16-24 Apr</p>
+                      <p><b>₹9,800</b> night</p>
+                    </div>
+                </div>
+            <div class="productCard">
+                <div class="cardBackGroundImg14">
+                  <div class="imgOver">
+                    <p>Guest Favourite</p>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="cardText">
+                  <div class="cardTextTitleSection">
+                    <p>Ortahisar Belediyesi, Turkey</p>
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <span>5.0</span>
+                    </p>
+                  </div>
+                  <p>4,252 kilometres away</p>
+                  <p>16-24 Apr</p>
+                  <p><b>₹9,800</b> night</p>
+                </div>
+            </div>
+            <div class="productCard">
+                <div class="cardBackGroundImg15">
+                  <div class="imgOver">
+                    <p>Guest Favourite</p>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="cardText">
+                  <div class="cardTextTitleSection">
+                    <p>Ortahisar Belediyesi, Turkey</p>
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <span>5.0</span>
+                    </p>
+                  </div>
+                  <p>4,252 kilometres away</p>
+                  <p>16-24 Apr</p>
+                  <p><b>₹9,800</b> night</p>
+                </div>
+            </div>
+                <div class="productCard">
+                  <div class="cardBackGroundImg16">
+                    <div class="imgOver">
+                      <p>Guest Favourite</p>
+                      <i class="fa-regular fa-heart"></i>
+                    </div>
+                  </div>
+                  <div class="cardText">
+                    <div class="cardTextTitleSection">
+                        <p>Ortahisar Belediyesi, Turkey</p>
+                        <p>
+                          <i class="fa-solid fa-star"></i>
+                          <span>5.0</span>
+                        </p>
+                      </div>
+                      <p>4,252 kilometres away</p>
+                      <p>16-24 Apr</p>
+                      <p><b>₹9,800</b> night</p>
+                  </div>
+                </div>
+                  <div class="productCard">
+                    <div class="cardBackGroundImg17">
+                      <div class="imgOver">
+                        <p>Guest Favourite</p>
+                        <i class="fa-regular fa-heart"></i>
+                      </div>
+                    </div>
+                    <div class="cardText">
+                      <div class="cardTextTitleSection">
+                        <p>Ortahisar Belediyesi, Turkey</p>
+                        <p>
+                          <i class="fa-solid fa-star"></i>
+                          <span>5.0</span>
+                        </p>
+                      </div>
+                      <p>4,252 kilometres away</p>
+                      <p>16-24 Apr</p>
+                      <p><b>₹9,800</b> night</p>
+                    </div>
+                </div> 
+            <div class="productCard">
+                <div class="cardBackGroundImg18">
+                  <div class="imgOver">
+                    <p>Guest Favourite</p>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="cardText">
+                  <div class="cardTextTitleSection">
+                    <p>Ortahisar Belediyesi, Turkey</p>
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <span>5.0</span>
+                    </p>
+                  </div>
+                  <p>4,252 kilometres away</p>
+                  <p>16-24 Apr</p>
+                  <p><b>₹9,800</b> night</p>
+                </div>
+            </div>
+            <div class="productCard">
+                <div class="cardBackGroundImg19">
+                  <div class="imgOver">
+                    <p>Guest Favourite</p>
+                    <i class="fa-regular fa-heart"></i>
+                  </div>
+                </div>
+                <div class="cardText">
+                  <div class="cardTextTitleSection">
+                    <p>Ortahisar Belediyesi, Turkey</p>
+                    <p>
+                      <i class="fa-solid fa-star"></i>
+                      <span>5.0</span>
+                    </p>
+                  </div>
+                  <p>4,252 kilometres away</p>
+                  <p>16-24 Apr</p>
+                  <p><b>₹9,800</b> night</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+</body>
+
+</html>
