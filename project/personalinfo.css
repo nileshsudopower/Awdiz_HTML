@@ -1,0 +1,825 @@
+*{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#parentdiv{
+    width: 100%;
+    /* border: 2px solid red; */
+    height: 1460px;
+    margin: auto;
+}
+
+#navbar{
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid rgb(200,200,200);
+    height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    background-color: white;
+}
+
+#firstnav{
+    width: 84%;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 8%;
+    height: 30px;
+}
+
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#profile {
+    width:20%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+#profile :nth-child(1){
+    font-size: 14px;
+    font-weight: 550;
+}
+
+#signup {
+    width: 33%;
+    border: 2px solid rgb(242,242,242);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 40px;
+    height: 50px;
+}
+
+#profile1{
+     /* border: 2px solid red; */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(106,106,106);
+}
+
+#profile1 i{
+    font-size: 40px;
+    color: white;
+}
+
+#accountandpersonalinfo{
+    width: 68%;
+    /* border: 1px solid red; */
+    margin: auto;
+    height: 990px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#personalinfo{
+    width: 58%;
+    /* border: 1px solid blue; */
+    height: 990px;
+}
+
+#accountinfo{
+    width:72%;
+    height: 80px;
+}
+
+#account{
+    width: 41%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 38px;
+}
+
+#account > span{
+    font-size: 14.5px;
+    font-weight: 500;
+}
+
+#account > span > i{
+    font-size: 13px;
+    color: rgb(136,136,136);
+}
+
+#info{
+    margin-top: 14px;
+}
+
+#info > p{
+    font-size: 32px;
+}
+
+#secondnav{
+    display: none;
+}
+
+#legalname{
+    width: 100%;
+    border-bottom: 1px solid rgb(200,200,200);
+    height: 70px;
+    margin-top: 50px;
+}
+
+#legal{
+    display: flex;
+    justify-content: space-between;
+}
+
+#legal > p:nth-child(1){
+    font-size: 16px;
+}
+
+#legal > p:nth-child(2){
+    font-size: 14px;
+}
+
+#name{
+    font-size: 15px;
+    color: rgb(133,133,134);
+    line-height: 1.8;
+}
+
+#preferredname{
+    width: 100%;
+    border-bottom: 1px solid rgb(200,200,200);
+    height: 68px;
+    margin-top: 25px;
+}
+
+#preferred{
+    display: flex;
+    justify-content: space-between;
+}
+
+#preferred > p:nth-child(1){
+    font-size: 16px;
+}
+
+#preferred > p:nth-child(2){
+    font-size: 14px;
+}
+
+#prefname{
+    font-size: 15px;
+    color: rgb(133,133,134);
+    line-height: 1.8;
+}
+
+#emailaddress{
+    width: 100%;
+    border-bottom: 1px solid rgb(200,200,200);
+    height: 68px;
+    margin-top: 25px;
+}
+
+#email{
+    display: flex;
+    justify-content: space-between;
+}
+
+#email > p:nth-child(1){
+    font-size: 16px;
+}
+
+#email > p:nth-child(2){
+    font-size: 14px;
+}
+
+#address{
+    font-size: 15px;
+    color: rgb(133,133,134);
+    line-height: 1.8;
+}
+
+#phonenumbers{
+    width: 100%;
+    border-bottom: 1px solid rgb(200,200,200);
+    height: 80px;
+    margin-top: 25px;
+}
+
+#phone{
+    display: flex;
+    justify-content: space-between;
+}
+
+#phone > p:nth-child(1){
+    font-size: 16px;
+}
+
+#phone > p:nth-child(2){
+    font-size: 14px;
+}
+
+#number{
+    font-size: 15px;
+    color: rgb(133,133,134);
+    margin-top: 6px;
+}
+
+#governmentid{
+    width: 100%;
+    border-bottom: 1px solid rgb(200,200,200);
+    height: 68px;
+    margin-top: 25px;
+}
+
+#government{
+    display: flex;
+    justify-content: space-between;
+}
+
+#government > p:nth-child(1){
+    font-size: 16px;
+}
+
+#government > p:nth-child(2){
+    font-size: 14px;
+}
+
+#govid{
+    font-size: 15px;
+    color: rgb(133,133,134);
+    line-height: 1.8;
+}
+
+#addresshome{
+    width: 100%;
+    border-bottom: 1px solid rgb(200,200,200);
+    height: 68px;
+    margin-top: 25px;
+}
+
+#addhome{
+    display: flex;
+    justify-content: space-between;
+}
+
+#addhome > p:nth-child(1){
+    font-size: 16px;
+}
+
+#addhome > p:nth-child(2){
+    font-size: 14px;
+}
+
+#addhome1{
+    font-size: 15px;
+    color: rgb(133,133,134);
+    line-height: 1.8;
+}
+
+#emergencycontact{
+    width: 100%;
+    border-bottom: 1px solid rgb(200,200,200);
+    height: 68px;
+    margin-top: 25px;
+}
+
+#emergency{
+    display: flex;
+    justify-content: space-between;
+}
+
+#emergency > p:nth-child(1){
+    font-size: 16px;
+}
+
+#emergency > p:nth-child(2){
+    font-size: 14px;
+}
+
+#contact{
+    font-size: 15px;
+    color: rgb(133,133,134);
+    line-height: 1.8;
+}
+
+#whywhichwhat{
+    border: 1px solid rgb(200,200,200);
+    width: 32%;
+    height: 800px;
+    border-radius: 12px;
+    margin-top: 140px;
+}
+
+#why{
+    width: 86%;
+    margin: auto;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(200,200,200);
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#why > p:nth-child(2){
+    font-size: 20px;
+    margin-bottom: 6px;
+    line-height: 1.5;
+}
+
+#why > p:nth-child(3){
+    margin-bottom: 35px;
+    line-height: 1.5;
+}
+
+#why > img{
+    width: 18%;
+    height: 50px;
+}
+
+#which{
+    width: 86%;
+    margin: auto;
+    margin-top: 20px;
+    border-bottom: 1px solid rgb(200,200,200);
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#which > p:nth-child(2){
+    font-size: 20px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+}
+
+#which > p:nth-child(3){
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+#which > img{
+    width: 14%;
+    height: 48px;
+}
+
+#what{
+    width: 86%;
+    margin: auto;
+    margin-top: 20px;
+    height: 260px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#what > p:nth-child(2){
+    font-size: 20px;
+    margin-bottom: 0px;
+    line-height: 1.5;
+}
+
+#what > p:nth-child(3){
+    margin-bottom: 38px;
+    line-height: 1.5;
+}
+
+#what > img{
+    width: 18%;
+    height: 44px;
+}
+
+#suphosair{
+    width: 100%;
+    height: 350px;
+    /* border: 1px solid red; */
+    background-color: rgb(247,247,247);
+    padding-top: 40px;
+    border-top: 1px solid rgb(200,200,200);
+}
+
+#suphosair1{
+    width: 75%;
+    margin-left: 188px;
+    height: 300px;
+    border-bottom: 1px solid rgb(200,200,200);
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(247,247,247);
+}
+
+#support p{
+    line-height: 2.2;
+    font-size: 15px;
+}
+
+#hosting{
+    margin-left: -50px;
+}
+
+#hosting p{
+    line-height: 2.2;
+    font-size: 15px;
+}
+
+#airbnb{
+    margin-right: 190px;
+}
+
+#airbnb p{
+    line-height: 2.2;
+    font-size: 15px;
+}
+
+#footer{
+    width: 100%;
+    background-color: rgb(247,247,247);
+}
+
+#footer1{
+    width: 75%;
+    height: 70px;
+    margin-left: 188px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(247,247,247);
+    font-size: 15px;
+}
+
+#webcurrsocial{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#webeng{
+    margin-left: 16px;
+    font-size: 14px;
+}
+
+#currency{
+    font-size: 14px;
+}
+
+#social{
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#social i{
+    font-size: 21px;
+}
+
+@media screen and (min-width:1040px) and (max-width:1050px){
+    #firstnav{
+        width: 94%;
+    }
+
+    #profile {
+        width:28%;
+    }
+
+    #accountandpersonalinfo{
+        width: 95%;
+        height: 1020px;
+    }
+
+    #secondnav{
+        display: none;
+    }
+
+    #whywhichwhat{
+        height: 825px;
+    }
+    
+    
+    #which{
+        height: 285px;
+    }
+    
+    #which > p:nth-child(2){
+        font-size: 20px;
+        margin-bottom: 0px;
+        line-height: 1.5;
+    }
+    
+    #which > p:nth-child(3){
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+    
+    #which > img{
+        width: 14%;
+        height: 48px;
+    }
+
+    #suphosair1{
+        width: 92%;
+        margin: auto;
+        /* margin-left: 40px; */
+        height: 290px;
+    }
+
+    #support p{
+        font-size: 14px;
+    }
+
+    #hosting{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    #hosting p{
+        font-size: 14px;
+    }
+
+    #airbnb{
+        /* margin-left: 40px; */
+        margin-right: 140px;
+    }
+    
+    #airbnb p{
+        font-size: 14px;
+    }
+
+    #footer{
+        width: 100%;
+        background-color: rgb(247,247,247);
+        height: 450px;
+    }
+
+    #footer1{
+        width: 75%;
+        height: 70px;
+        margin-left: 138px;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        background-color: rgb(247,247,247);
+    }
+
+    #footer1text span{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #footer1text p{
+        font-size: 14px;
+    }
+
+    #webcurrsocial{
+        width: 38%;
+    }
+
+}
+
+@media screen and (min-width:860px) and (max-width:1039px){
+    #firstnav{
+        width: 91%;
+    }
+
+    #logo{
+        width: 10%;
+        height: 30px;
+    }
+
+    #profile {
+        width:34%;
+    }
+
+    #accountandpersonalinfo{
+        width: 95%;
+        height: 1140px;
+    }
+
+    #account{
+        width: 51%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 38px;
+    }
+
+    #secondnav{
+        display: none;
+    }
+
+    #whywhichwhat{
+        border: 1px solid rgb(200,200,200);
+        width: 32%;
+        height: 920px;
+        border-radius: 12px;
+        margin-top: 140px;
+    }
+    
+    #why{
+        height: 255px;
+    }
+    
+    
+    #why > p:nth-child(3){
+        width: 90%;
+    }
+    
+    #why > img{
+        width: 22%;
+        height: 50px;
+    }
+    
+    #which{
+        height: 340px;
+    }
+    
+    #which > p:nth-child(3){
+        width: 90%;
+    }
+    
+    #which > img{
+        width: 18%;
+        height: 52px;
+    }
+    
+    #what{
+        margin-top: 20px;
+        height: 300px;
+    }
+    
+    #what > p:nth-child(3){
+        margin-bottom: 50px;
+        line-height: 1.5;
+    }
+    
+    #what > img{
+        width: 22%;
+        height: 44px;
+    }
+
+    #suphosair{
+        height: 870px;
+    }
+    #suphosair1{
+        width: 92%;
+        margin: auto;
+        margin-left: 30px;
+        height: 760px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+
+    #support p{
+        font-size: 14px;
+    }
+
+    #support{
+        width: 100%;
+        border-bottom: 1px solid rgb(200,200,200);
+        padding-bottom: 20px;
+    }
+
+    #hosting{
+        width: 100%;
+        margin-left: -1px;
+        border-bottom: 1px solid rgb(200,200,200);
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    #hosting p{
+        margin-left: 6px;
+    }
+
+    #airbnb{
+        width: 96%;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+    
+    #airbnb p{
+        font-size: 14px;
+        margin-left: 8px;
+    }
+
+    #footer{
+        width: 100%;
+        background-color: rgb(247,247,247);
+        height: 960px;
+        margin-top: -30px;
+    }
+
+    #footer1{
+        width: 100%;
+        height: 70px;
+        margin-left: 0px;
+        /* border: 1px solid red; */
+        display: flex;
+        align-items: center;
+        flex-direction: column-reverse;
+        background-color: rgb(247,247,247);
+        margin-top: -30px;
+    }
+
+    #footer1text span{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #footer1text p{
+        font-size: 14px;
+    }
+
+    #webcurrsocial{
+        width: 38%;
+    }
+}
+
+@media screen and (max-width:460px){
+    #parentdiv{
+        height: 850px;
+    }
+
+    #navbar{
+        height: 65px;
+        border: none;
+    }
+
+    #firstnav{
+        display: none;
+    }
+
+    #secondnav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 65px;
+    }
+
+    #secondnav > i{
+        margin-left: 25px;
+        font-size: 14.5px;
+    }
+
+    #account{
+        display: none;
+    }
+
+    #accountandpersonalinfo{
+        width: 90%;
+        height: 790px;
+    }
+
+    #accountinfo{
+        width:100%;
+        height: 80px;
+        margin-top: 35px;
+    }
+
+    #info > p{
+        font-size: 22px;
+    }
+
+    #personalinfo{
+        width: 100%;
+        /* border: 1px solid blue; */
+        height: 400px;
+    }
+
+    #legalname{
+        margin-top: -15px;
+    }
+
+    #phonenumbers{
+        height: 100px;
+    }
+
+    #whywhichwhat{
+        display: none;
+    }
+
+    #footer{
+        display: none;
+    }
+}

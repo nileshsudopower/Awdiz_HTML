@@ -1,0 +1,800 @@
+*{
+    font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, Helvetica Neue, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#parentdiv{
+    width: 100%;
+    /* border: 2px solid red; */
+    height: 1160px;
+    margin: auto;
+}
+
+#navbar{
+    width: 100%;
+    margin: auto;
+    border-bottom: 1px solid rgb(200,200,200);
+    height: 82px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 999;
+    top: 0;
+    background-color: white;
+}
+
+#firstnav{
+    width: 96%;
+    height: 75px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo{
+    width: 8%;
+    height: 30px;
+}
+
+#logo img{
+    width: 100%;
+    height: 100%;
+}
+
+#profile {
+    width:20%;
+    /* border: 2px solid black; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+#profile :nth-child(1){
+    font-size: 14px;
+    font-weight: 550;
+}
+
+#signup {
+    width: 33%;
+    border: 2px solid rgb(242,242,242);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 40px;
+    height: 50px;
+}
+
+#profile1{
+     /* border: 2px solid red; */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(106,106,106);
+}
+
+#profile1 i{
+    font-size: 42px;
+    color: white;
+}
+
+#main{
+    display: flex;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+#main1{
+    width: 59.8%;
+    height: 1160px;
+}
+
+#farms{
+    width: 100%;
+    height: 170px;
+    /* border: 1px solid red; */
+    margin-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#leftarrowmenu{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#farmtwentyfour > p{
+    font-size: 30px;
+    font-weight: 550;
+}
+
+#datesguestshare{
+    width: 32%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#dates{
+    border: 1px solid rgb(200,200,200);
+    width: 33%;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+}
+
+#guest{
+    border: 1px solid rgb(200,200,200);
+    width: 28%;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+
+#share{
+    border: 1px solid rgb(200,200,200);
+    width: 31%;
+    height: 40px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 15px;
+}
+
+#share > p{
+    margin-left: 14px;
+}
+
+#share > i{
+    margin-right: 14px;
+    font-size: 11px;
+    font-weight: 1000;
+}
+
+#farms1{
+    display: none;
+}
+
+.sites_caves {
+    width: 100%;
+    /* border: 2px solid black; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 25px;
+    margin-top: 30px;
+  }
+
+  .image_div{
+    /* border: 2px solid red; */
+    width: 31.5%;
+    height: 466px;
+    margin-bottom: 30px;
+}
+
+.childrenDiv {
+    /* border: 2px solid red; */
+    height: 270px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-507741036516104287/original/55cdb8e1-85b4-4948-b116-671e1d161800.jpeg?im_w=720");
+  }
+
+.childrenDiv1 {
+    /* border: 2px solid red; */
+    height: 270px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-1038970133355880035/original/ece4a91a-20d5-47d9-9199-49259433ecbe.jpeg?im_w=720");
+  }
+
+  .childrenDiv2 {
+    /* border: 2px solid red; */
+    height: 270px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("https://a0.muscache.com/im/pictures/37e4495d-74d1-403f-9cc6-56dc2153c475.jpg?im_w=720");
+  }
+
+  .childrenDiv3 {
+    /* border: 2px solid red; */
+    height: 270px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-40333094/original/9b592fcd-99b0-42f6-b5c6-f1290afef4a9.jpeg?im_w=720");
+  }
+
+  .childrenDiv4 {
+    /* border: 2px solid red; */
+    height: 270px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("https://a0.muscache.com/im/pictures/prohost-api/Hosting-1101351292526816575/original/ceb7a6de-4cb7-477c-8291-65dd09e6146d.jpeg?im_w=720");
+  }
+
+  .childrenDiv5 {
+    /* border: 2px solid red; */
+    height: 270px;
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-image: url("https://a0.muscache.com/im/pictures/miso/Hosting-53371625/original/8af23dac-2701-4fc0-ab1c-c8a244f53fc2.jpeg?im_w=720");
+  } 
+
+  .addnote{
+    /* border: 1px solid rgb(200,200,200); */
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    background-color: rgb(247,247,247);
+}
+
+.addnote > p{
+    margin-left: 15px;
+}
+
+.star{
+    font-size: 10px;
+}
+.placename{
+    display: flex;
+    justify-content: space-between;
+    line-height: 2;
+}
+
+.rating{
+    font-size: 15px;
+    color: rgb(116,116,116);
+}
+
+.rupee{
+    line-height: 2.3;
+    color: black;
+}
+
+.place{
+    font-weight: 550;
+}
+
+.guestfav{
+    max-width: 90%;
+    padding-top: 10px;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    position: relative;
+}
+
+.guestfav > i:nth-child(1){
+    font-size: 22px;
+    color: rgb(255,56,92);
+    position: absolute;
+    left: 234px;
+    top: 15px;
+}
+
+.guestfav > i:nth-child(2){
+    font-size: 24px;
+    color: white;
+    position: absolute;
+    top: 15px;
+}
+
+.placedescrip{
+    font-size: 15px;
+    color: rgb(116,116,116);
+    line-height: 1.5;
+}
+
+#main2{
+    width: 37%;
+    height: 656px;
+    margin-left: 50px;
+    /* position: relative; */
+    position: sticky;
+    top: 82px;
+    background-color: white;
+}
+
+
+
+#maps iframe{
+    width: 100%;
+    height: 656px;
+}
+
+.priceheart{
+    width: 18%;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 300px;
+    left: 160px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    box-shadow: 0 0 10px 3px rgb(136, 135, 135);
+}
+
+.priceheart > p{
+    margin-left: 10px;
+}
+
+.priceheart > i{
+    margin-right: 10px;
+    color: rgb(255,56,92);
+    font-size: 12px;
+}
+
+.priceheart1{
+    width: 18%;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 330px;
+    left: 260px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    box-shadow: 0 0 10px 3px rgb(136, 135, 135);
+}
+
+.priceheart1 > p{
+    margin-left: 10px;
+}
+
+.priceheart1 > i{
+    margin-right: 10px;
+    color: rgb(255,56,92);
+    font-size: 12px;
+}
+
+.priceheart2{
+    width: 18%;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 240px;
+    left: 150px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    box-shadow: 0 0 10px 3px rgb(136, 135, 135);
+}
+
+.priceheart2 > p{
+    margin-left: 10px;
+}
+
+.priceheart2 > i{
+    margin-right: 10px;
+    color: rgb(255,56,92);
+    font-size: 12px;
+}
+
+.priceheart3{
+    width: 18%;
+    height: 30px;
+    border-radius: 15px;
+    position: absolute;
+    top: 530px;
+    left: 160px;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+    box-shadow: 0 0 10px 3px rgb(136, 135, 135);
+}
+
+.priceheart3 > p{
+    margin-left: 10px;
+}
+
+.priceheart3 > i{
+    margin-right: 10px;
+    color: rgb(255,56,92);
+    font-size: 12px;
+}
+
+@media screen and (min-width:1040px) and (max-width:1050px){
+    #firstnav{
+        width: 94%;
+    }
+
+    #profile {
+        width:28%;
+    }
+
+    #farms{
+        width: 100%;
+    }
+    
+    #datesguestshare{
+        width: 56%;
+    }
+
+    #farms1{
+        display: none;
+    }
+
+    #main1{
+        width: 54%;
+        height: 1630px;
+    }
+
+    .image_div{
+        /* border: 2px solid red; */
+        width: 48%;
+        height: 416px;
+        margin-bottom: 30px;
+    }
+
+    .childrenDiv {
+        /* border: 2px solid red; */
+        height: 240px;
+        width: 100%;
+      }
+    
+      .childrenDiv1 {
+        /* border: 2px solid red; */
+        height: 240px;
+        width: 100%;
+      }
+
+      .childrenDiv2 {
+        /* border: 2px solid red; */
+        height: 240px;
+        width: 100%;
+      }
+
+      .childrenDiv3 {
+        /* border: 2px solid red; */
+        height: 240px;
+        width: 100%;
+      }
+
+      .childrenDiv4 {
+        /* border: 2px solid red; */
+        height: 240px;
+        width: 100%;
+      }
+
+      .childrenDiv5 {
+        /* border: 2px solid red; */
+        height: 240px;
+        width: 100%;
+      }
+
+      .guestfav > i:nth-child(1){
+        font-size: 23px;
+        color: rgb(255,56,92);
+        position: absolute;
+        left: 203px;
+        top: 15px;
+    }
+
+    #main2{
+        width: 48%;
+        height: 656px;
+        margin-left: 50px;
+        /* position: relative; */
+        position: sticky;
+        top: 82px;
+        background-color: white;
+    }
+    
+    
+    
+    #maps iframe{
+        width: 100%;
+        height: 656px;
+    }
+
+    .priceheart{
+        width: 20%;
+    }
+
+    .priceheart1{
+        width: 20%;
+    }
+
+    .priceheart2{
+        width: 20%;
+    }
+
+    .priceheart3{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width:860px) and (max-width:1039px){
+    #firstnav{
+        width: 91%;
+    }
+
+    #logo{
+        width: 10%;
+        height: 30px;
+    }
+
+    #profile {
+        width:34%;
+    }
+    
+    #datesguestshare{
+        width: 38%;
+    }
+
+    #farmtwentyfour{
+        font-size: 22px;
+    }
+
+    #farms1{
+        display: none;
+    }
+
+    #main1{
+        width: 89%;
+        height: 1160px;
+        margin: auto;
+        margin-left: 20px;
+    }
+
+    .image_div{
+        /* border: 2px solid red; */
+        width: 48.5%;
+        height: 546px;
+        margin-bottom: 30px;
+    }
+
+    .childrenDiv {
+        /* border: 2px solid red; */
+        height: 360px;
+        width: 100%;
+      }
+    
+      .childrenDiv1 {
+        /* border: 2px solid red; */
+        height: 360px;
+        width: 100%;
+      }
+
+      .childrenDiv2 {
+        /* border: 2px solid red; */
+        height: 360px;
+        width: 100%;
+      }
+
+      .childrenDiv3 {
+        /* border: 2px solid red; */
+        height: 360px;
+        width: 100%;
+      }
+
+      .childrenDiv4 {
+        /* border: 2px solid red; */
+        height: 360px;
+        width: 100%;
+      }
+
+      .childrenDiv5 {
+        /* border: 2px solid red; */
+        height: 360px;
+        width: 100%;
+      }
+
+      .guestfav > i:nth-child(1){
+        font-size: 23px;
+        color: rgb(255,56,92);
+        position: absolute;
+        left: 311px;
+        top: 15px;
+    }
+
+    #main2{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:460px){
+    #parentdiv{
+        height: 850px;
+    }
+
+    #navbar{
+        height: 0px;
+        border: none;
+    }
+
+    #firstnav{
+        display: none;
+    }
+
+    #farms{
+        display: none;
+    }
+
+    #farms1{
+        width: 100%;
+        height: 160px;
+        /* border: 1px solid red; */
+        margin-left: 25px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #leftarrowmenu1{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    #farmtwentyfour1 > p{
+        font-size: 25px;
+        font-weight: 550;
+    }
+    
+    #datesguestshare1{
+        width: 92%;
+        display: flex;
+    }
+
+    #dateguest{
+        border: 1px solid rgb(200,200,200);
+        width: 36%;
+        height: 40px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 14px;
+    }
+
+    #dateguest > p:nth-child(1){
+        margin-left: 12px;
+    }
+
+    #dateguest > p:nth-child(2) > i{
+        font-size: 2px;
+        display: flex;
+        align-items: center;
+    }
+
+    #dateguest > p:nth-child(3){
+        margin-right: 12px;
+    }
+    
+    #share1{
+        border: 1px solid rgb(200,200,200);
+        width: 26%;
+        height: 40px;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 15px;
+        margin-left: 10px;
+    }
+    
+    #share1 > p{
+        margin-left: 14px;
+    }
+    
+    #share1 > i{
+        margin-right: 14px;
+        font-size: 11px;
+        font-weight: 1000;
+    }
+
+    #main1{
+        width: 89%;
+        height: 3840px;
+        margin: auto;
+        margin-left: 0px;
+    }
+
+    .image_div{
+        /* border: 2px solid red; */
+        width: 100%;
+        height: 580px;
+        margin-bottom: 30px;
+    }
+
+    .childrenDiv {
+        /* border: 2px solid red; */
+        height: 380px;
+        width: 100%;
+      }
+    
+      .childrenDiv1 {
+        /* border: 2px solid red; */
+        height: 380px;
+        width: 100%;
+      }
+
+      .childrenDiv2 {
+        /* border: 2px solid red; */
+        height: 380px;
+        width: 100%;
+      }
+
+      .childrenDiv3 {
+        /* border: 2px solid red; */
+        height: 380px;
+        width: 100%;
+      }
+
+      .childrenDiv4 {
+        /* border: 2px solid red; */
+        height: 380px;
+        width: 100%;
+      }
+
+      .childrenDiv5 {
+        /* border: 2px solid red; */
+        height: 380px;
+        width: 100%;
+      }
+
+      .guestfav > i:nth-child(1){
+        font-size: 23px;
+        color: rgb(255,56,92);
+        position: absolute;
+        left: 344px;
+        top: 15px;
+    }
+
+    .placename{ 
+        margin-top: 8px;
+    }
+
+    #main2{
+        display: none;
+    }
+}
